@@ -90,6 +90,15 @@ See [DEPLOYMENT.md](./DEPLOYMENT.md) for the complete checklist. Summary:
 - [ ] Env vars in Vercel
 - [ ] Deploy
 
+ Challenges Faced & How I Solved Them
+ OAuth Session Handling
+
+Handling Google OAuth with Next.js App Router was challenging. Initially, sessions were not persisting correctly after login.
+
+Solution:
+I implemented a proper server-side Supabase client in the OAuth callback route and added middleware to refresh sessions securely. This ensured authentication worked reliably.
+
 ## License
 
 MIT
+
